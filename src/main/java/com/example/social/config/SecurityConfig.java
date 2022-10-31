@@ -62,6 +62,12 @@ public class SecurityConfig {
                 .getBuilder("facebook")
                 .clientId(clientId)
                 .clientSecret(clientSecret)
+                .scope(
+                        "public_profile",
+                        "email",
+                        "user_birthday",
+                        "user_gender"
+                )
                 .build();
     }
 
